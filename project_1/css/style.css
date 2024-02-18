@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 以上是CSS Reset */
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+.wrap{
+    width: 100%;
+}
+
+.container{
+    max-width: 1002px;
+    margin: 0 auto;
+}
+
+/* Bar CSS */
+.bar{
+	height: 30px;
+	background-color: #f6f6f6;
+}
+
+.bar ul{
+	float: right;
+}
+
+.bar ul li{
+	float: left;
+	margin: 5px;
+}
+
+.bar li a{
+	text-decoration: none;
+	font-size: 16px;
+ 
+}
+
+.bar li img{
+	margin-right: 5px;
+    float: left;
+}
+
+.bar li span{
+    float: left;
+}
+
+.facebook{
+	border-right: 2px solid #cccccc;
+	padding-right: 8px;
+}
+
+.facebook span{
+  color:#4460a0;
+}
+
+/* Header CSS */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.menu{
+    float: right;
+    position: relative;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    width: 80px;
+    text-align: center;
+}
+
+.menu li a{
+    color: rgb(124, 223, 190);
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.menu >ul ul{
+    display: none;
+}
+
+.dropdown-open{
+    position: absolute;
+    z-index: 100;
+    background: white;
+}
+
+
+.menu li a:hover{
+    border-bottom: 4px solid rgb(124, 223, 190);
+}
+
+.menu li a.active{
+    color: white;
+    background: rgb(124, 223, 190);
+}
+
+/* 下拉式選單 */
+
+/* banner CSS */
+.banner{
+    position: relative;
+    width: 1002px;
+}
+
+.banner p{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    line-height: 45px;
+    letter-spacing: 5px;
+    top: 40%;
+    left: 2%;
+}
+
+/* content CSS */
+.content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.course{
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-item{
+    box-shadow: 0px 5px 5px rgb(214, 214, 214);
+    width: 300px;
+    border-radius: 3px;
+}
+
+.course-item h2{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.course-item ul{
+    padding: 0px 10px 20px 10px;
+}
+
+.course-item li{
+    list-style: disc;
+    margin-left: 25px;
+    padding-top: 5px;
+}
+
+.course-item p{
+    padding: 0px 10px 20px 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Gap table CSS */
+.gap_table{
+    margin-top: 50px;
+}
+.gap_table h2{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.price{
+    width: 850px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.price th,.price td{
+    border-top: 1px solid rgba(61, 54, 54, 0.219);
+    border-bottom: 1px solid rgba(61, 54, 54, 0.219);
+    text-align: left;
+}
+
+.price th{
+    padding: 10px;
+    background: rgba(96, 112, 96, 0.151);
+}
+
+.price td{
+    padding: 10px;
+}
+
+.price span{
+    color: rgb(108, 175, 134);
+}
+
+/* form CSS */
+.form{
+    background: linear-gradient(#00644b,#009771);
+    height: 430px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_text h2{
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.form_input{
+    margin: 0 auto;
+    margin: 20px;
+}
+
+.form_message{
+    float: left;
+    width: 50%;
+}
+
+.form_message textarea{
+    width: 95%;
+    height: 250px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px 0 0 5px;
+}
+
+.form_contact{
+    float: right;
+    width: 50%;
+    color: white;
+    line-height: 30px;
+}
+
+.form_contact input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-style: none;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.form_contact .btn{
+    width: 70px;
+    margin-top: 10px;
+    float: right;
+    background-color: #00cc98;
+    color: white;
+    border-style: none;
+}
+
+.form_contact .btn:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+
+/* footer CSS */
+.footer{
+    height: 50px;
+    padding: 15px;
+}
+
+.footer .footer_logo{
+    float: left;
+}
+
+.footer .contact{
+    float: right;
+    line-height: 20px;
+}
+
+.footer .contact span{
+    color: #e65f94;
+}
+
+/* top btn */
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background: rgb(47, 197, 140);
+    border-radius: 100px;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(2px 5px 10px rgba(109, 104, 104, 0.7))
+    
+}
+
+.top a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 14px;
+    top: 23px;
+    font-weight: bolder;
+}
+
+.top:hover{
+    background: rgb(118, 218, 184);
+    cursor: pointer;
+}
+
